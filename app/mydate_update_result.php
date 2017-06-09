@@ -36,8 +36,8 @@ foreach ($update_user as $stmt => $row) {
       パスワード：<?php echo $password; ?><br>
       Email：<?php echo $mail; ?><br>
       住所：<?php echo $address; ?><br>
-      <?php echo return_top(); ?>
     </p>
   </div>
+  <?php echo return_top(); ?>
 </body>
 </html>

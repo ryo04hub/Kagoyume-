@@ -5,11 +5,6 @@ require_once("../util/yahoo_api.php");
 require_once("../util/defineUtil.php");
 require_once("../util/scriptUtil.php");
 
-/**todo
-* ユーザーごとにカートを分ける機能
-* ログインしていない場合に、「ログインして購入する」と表示する
-*/
-
 //合計金額の初期化
 $totalPrice = 0;
 
@@ -77,7 +72,7 @@ $_SESSION['itemsInfo'] = $itemsInfo;
         <?php endif; ?>
 
       <?php endif; ?>
-    <?php echo return_top(); ?>
     </div>
+    <?php echo return_top(); ?>
   </body>
 </html>

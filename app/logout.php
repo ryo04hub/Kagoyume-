@@ -21,8 +21,10 @@ $_SESSION['username'] = ' ';
   </head>
   <body>
     <?php include '../lib/header.php' ?>
-    <h1>ログアウト</h1>
-    <p>ログアウト完了</p>
+    <div class="container">
+      <h1>ログアウト</h1>
+      <p>ログアウト完了</p>
+    </div>
     <?php echo return_top(); ?>
   </body>
 </html>

@@ -23,26 +23,28 @@ $conf_value = array(
   </head>
   <body>
     <?php if (!in_array(null, $conf_value, true)): ?>
-      <h1>登録確認</h1>
-      <p>ユーザーネーム：<?php echo $conf_value['username']; ?></p>
-      <p>パスワード：<?php echo $conf_value['password']; ?></p>
-      <p>メール：<?php echo $conf_value['email']; ?></p>
-      <p>住所：<?php echo $conf_value['address']; ?></p>
+      <div class="container">
+        <h1>登録確認</h1>
+        <p>ユーザーネーム：<?php echo $conf_value['username']; ?></p>
+        <p>パスワード：<?php echo $conf_value['password']; ?></p>
+        <p>メール：<?php echo $conf_value['email']; ?></p>
+        <p>住所：<?php echo $conf_value['address']; ?></p>
 
-      <p>上記の内容で登録いたします。よろしいですか？</p>
-      <form class="" action="<?php echo REGIST_COMP; ?>" method="post">
-        <button type="submit" name="regist">はい</button>
-      </form>
+        <p>上記の内容で登録いたします。よろしいですか？</p>
+        <form class="" action="<?php echo REGIST_COMP; ?>" method="post">
+          <button type="submit" name="regist">はい</button>
+        </form>
 
-      <form class="" action="<?php echo REGIST; ?>" method="post">
-        <button type="submit" name="">いいえ</button>
-      </form>
+        <form class="" action="<?php echo REGIST; ?>" method="post">
+          <button type="submit" name="">いいえ</button>
+        </form>
+      </div>
 
     <?php else:
       foreach ($conf_value as $key => $value) {
         switch ($key) {
           case 'username':
-          echo "ユーザーネームを正しく入力してください<br>";
+          echo "ユーザー名を正しく入力してください<br>";
             break;
           case 'password':
             echo "パスワードを正しく入力してください<br>";
@@ -57,10 +59,12 @@ $conf_value = array(
       }
       ?>
 
-      <form class="" action="<?php echo REGIST; ?>" method="post">
-        <button type="submit" name="">登録画面へ戻る</button>
-      </form>
+      <div class="container">
+        <form class="" action="<?php echo REGIST; ?>" method="post">
+          <button type="submit" name="">登録画面へ戻る</button>
+        </form>
+      </div>
 
-    <?php endif ?>
+    <?php endif; ?>
   </body>
 </html>

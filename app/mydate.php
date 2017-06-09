@@ -18,6 +18,8 @@ require_once("../util/dbaccessUtil.php");
    <body>
      <?php include '../lib/header.php' ?>
 
+     <div class="container">
+
      <?php if ($username === "Guestユーザー"): ?>
        <p>ログインすると会員情報が見れるようになります。<a href="<?php echo LOGIN; ?>">ログイン  </a></p>
        <p>まだ会員でない方はこちら：<a href="<?php echo REGIST; ?>">新規会員登録</a></p>
@@ -27,6 +29,7 @@ require_once("../util/dbaccessUtil.php");
        <a href="<?php echo MY_UPDATE; ?>">登録情報更新</a>
      <?php endif; ?>
 
+     </div>
      <?php return_top(); ?>
    </body>
  </html>

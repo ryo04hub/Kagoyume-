@@ -37,7 +37,6 @@ $hits = $xml->Result->Hit
     <?php include '../lib/header.php' ?>
 
     <div class="container">
-
       <h2>商品名：<?php echo $hits->Name; ?></h2>
       <img src="<?php echo $hits->Image->Medium; ?>" alt="商品画像" />
       <p>
@@ -45,12 +44,16 @@ $hits = $xml->Result->Hit
         価格：<?php echo $hits->Price; ?><br>
         評価：<?php echo $hits->Review->Rate; ?>
       </p>
+    </div>
 
+    <div class="container">
       <form action="<?php echo ADD; ?>" method="POST">
         <button name="add">カートに入れる</button>
         <input type="hidden" name="itemcode" value="<?php echo $itemcode; ?>">
       </form>
+    </div>
 
+    <div class="container">
       <a href="<?php echo SEARCH. '?query=' .$query. '&sort=' .$sort. '&category_id=' .$category_id; ?>">検索結果に戻る</a>
     </div>
   </body>

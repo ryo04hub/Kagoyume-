@@ -10,8 +10,6 @@ $username = $_SESSION['username'];
 $userID = return_userID($username);
 delete_user($userID);
 
-$_SESSION['username'] = 'Guestユーザー';
-
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +23,7 @@ $_SESSION['username'] = 'Guestユーザー';
   <div class="container">
     <h1>削除完了</h1>
     <p>削除しました。</p>
-    <p><?php echo return_top(); ?></p>
   </div>
+  <?php echo return_top(); ?>
 </body>
 </html>

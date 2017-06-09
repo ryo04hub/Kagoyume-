@@ -49,7 +49,7 @@ $itemsInfo = $_SESSION['itemsInfo'];
         </form>
 
       <p><a href="<?php echo CART; ?>">カートに戻る</a></p>
-      <?php echo return_top(); ?>
-  </div>
+    </div>
+    <?php echo return_top(); ?>
   </body>
 </html>

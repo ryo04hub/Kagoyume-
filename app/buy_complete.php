@@ -99,8 +99,9 @@ $_SESSION['itemsInfo'] = array();
       <?php endforeach ?>
 
       <p>合計金額：<?php echo $totalPrice;?>円</p>
-
-      <?php echo return_top(); ?>
     </div>
+
+    <?php echo return_top(); ?>
+
   </body>
 </html>

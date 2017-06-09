@@ -55,7 +55,7 @@ if (!empty($userdatas) && array_search($password, $userdata) !== false && $userd
 } elseif ($userdata['deleteFlg'] == 1) {
   $loginMessage = "これは削除されたユーザーです";
 
-} elseif(!empty($_POST)) {
+} elseif (!empty($_POST)) {
 
   if (empty($userdatas)) {
     $loginMessage = "ユーザーが見つかりません。正しいユーザー名を入力してください。<br>";

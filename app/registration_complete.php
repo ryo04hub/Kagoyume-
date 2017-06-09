@@ -39,14 +39,16 @@ if ($insert_result != null) {
     <title>登録完了ページ</title>
   </head>
   <body>
-    <h1>登録結果</h1>
-    <p>ユーザーネーム：<?php echo $username; ?></p>
-    <p>パスワード：<?php echo $password; ?></p>
-    <p>メール：<?php echo $email; ?></p>
-    <p>住所：<?php echo $address; ?></p>
+    <div class="container">
+      <h1>登録結果</h1>
+      <p>ユーザーネーム：<?php echo $username; ?></p>
+      <p>パスワード：<?php echo $password; ?></p>
+      <p>メール：<?php echo $email; ?></p>
+      <p>住所：<?php echo $address; ?></p>
 
-    <!-- 登録完了メッセージまたはエラーメッセージをecho -->
-    <p><?php echo $result_message; ?></p>
+      <!-- 登録完了メッセージまたはエラーメッセージをecho -->
+      <p><?php echo $result_message; ?></p>
+    </div>
     <?php echo return_top(); ?>
   </body>
 </html>

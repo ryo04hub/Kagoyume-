@@ -12,7 +12,7 @@
  */
 
 function return_top(){
-   return "<a href='".ROOT_URL."'>トップへ戻る</a>";
+   return "<div class='container'><a href='".ROOT_URL."'>トップへ戻る</a></div>";
  }
 
 /**
